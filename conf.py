@@ -26,7 +26,7 @@ SITE_URL = "http://twohourslate.com/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://twohourslate.com/"
 BLOG_EMAIL = "revorefurb@gmail.com"
-BLOG_DESCRIPTION = "The essence of time is what is left behind."  # (translatable)
+BLOG_DESCRIPTION = "The essence of time is experience."  # (translatable)
 
 # Nikola is multilingual!
 
@@ -79,11 +79,23 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/archive.html", "Archive"),
-        ("/categories/", "Tags"),
-        ("/rss.xml", "RSS feed"),
+	('/', '<i class="fa fa-home fa-lg"></i>'),
+	('/about.html', 'About'),
+        ('/archive.html', 'Archive'),
+        ('/categories/', 'Tags'),
+	('/authors/', 'Authors'),
     ),
 }
+
+NAVIGATION_LINKS_ALT = {
+   DEFAULT_LANG: (
+	('https://twitter.com/revorefurb', 
+'<i class="fa fa-twitter fa-lg"></i>'),
+	('https://github.com/revorefurb', '<i class="fa fa-github fa-lg"></i>'),
+	('/rss.xml', '<i class="fa fa-rss fa-lg"></i>'),
+   )
+}
+
 
 # Name of the theme to use.
 THEME = "bootstrap3"
@@ -129,11 +141,13 @@ THEME_COLOR = '#5670d4'
 POSTS = (
     ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
+    ("posts/*.md", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.rst", "pages", "story.tmpl"),
     ("pages/*.txt", "pages", "story.tmpl"),
+    ("pages/*.md", "pages", "story.templ"),
     ("pages/*.html", "pages", "story.tmpl"),
 )
 
@@ -157,6 +171,7 @@ TIMEZONE = "America/Phoenix"
 # Date format used to display post dates. (translatable)
 # (str used by datetime.datetime.strftime)
 # DATE_FORMAT = '%Y-%m-%d %H:%M'
+DATE_FORMAT = '%B %d, %Y'
 
 # Date format used to display post dates, if local dates are used. (translatable)
 # (str used by moment.js)
@@ -169,7 +184,7 @@ TIMEZONE = "America/Phoenix"
 # 2 = using a string like “2 days ago”
 #
 # Your theme must support it, bootstrap and bootstrap3 already do.
-# DATE_FANCINESS = 0
+DATE_FANCINESS = 2
 
 # While Nikola can select a sensible locale for each language,
 # sometimes explicit control can come handy.
@@ -183,8 +198,8 @@ TIMEZONE = "America/Phoenix"
 # not set the default Nikola mapping is used.
 
 # LOCALES = {}
-# LOCALE_FALLBACK = None
-# LOCALE_DEFAULT = None
+LOCALE_FALLBACK = 'en_US.utf8'
+# LOCALE_DEFAULT = "en_US.utf8"
 
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of {source: relative destination}.
@@ -413,14 +428,14 @@ HIDDEN_CATEGORIES = []
 
 # If ENABLE_AUTHOR_PAGES is set to True and there is more than one
 # author, author pages are generated.
-# ENABLE_AUTHOR_PAGES = True
+ENABLE_AUTHOR_PAGES = True
 
 # Path to author pages. Final locations are:
 # output / TRANSLATION[lang] / AUTHOR_PATH / index.html (list of authors)
 # output / TRANSLATION[lang] / AUTHOR_PATH / author.html (list of posts by an author)
 # output / TRANSLATION[lang] / AUTHOR_PATH / author.xml (RSS feed for an author)
 # (translatable)
-# AUTHOR_PATH = "authors"
+AUTHOR_PATH = "authors"
 
 # If AUTHOR_PAGES_ARE_INDEXES is set to True, each author's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
@@ -429,18 +444,19 @@ HIDDEN_CATEGORIES = []
 # Set descriptions for author pages to make them more interesting. The
 # default is no description. The value is used in the meta description
 # and displayed underneath the author list or index page’s title.
-# AUTHOR_PAGES_DESCRIPTIONS = {
-#    DEFAULT_LANG: {
-#        "Juanjo Conti": "Python coder and writer.",
-#        "Roberto Alsina": "Nikola father."
-#    },
-# }
+AUTHOR_PAGES_DESCRIPTIONS = {
+    DEFAULT_LANG: {
+        "revorefurb": "Techno data monkey.",
+        "biminicrimp": "Stream of consciousness.",
+	"Benjamin Manahan": "Human being."
+    },
+ }
 
 
 # If you do not want to display an author publicly, you can mark it as hidden.
 # The author will not be displayed on the author list page and posts.
 # Tag pages will still be generated.
-HIDDEN_AUTHORS = ['Guest']
+HIDDEN_AUTHORS = ['Ghost']
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
@@ -1229,7 +1245,11 @@ UNSLUGIFY_TITLES = True
 
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
-GLOBAL_CONTEXT = {}
+GLOBAL_CONTEXT = {
+	'SHOW_AUTHOR': False,
+	'NAVIGATION_LINKS_ALT': 
+NAVIGATION_LINKS_ALT
+}
 
 # Add functions here and they will be called with template
 # GLOBAL_CONTEXT as parameter when the template is about to be
