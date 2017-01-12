@@ -1,0 +1,18 @@
+deploy:
+## Delete staging folder
+	rm -rf $(STAGING_DIR) && \
+## Copy output directory to staging folder
+	cp -r $(OUTPUT_DIR) $(STAGING_DIR)
+## Add CNAME file for github
+	cd $(STAGING_DIR) && \
+	echo $(DOMAIN) > CNAME && \
+## Tell github do not run jekyll
+	touch .nojekyll && \
+## Initialize a new repo add and push to github 
+overwriting all previous history
+	git init && \
+	git add . && \
+	git commit -m "Build site" && \
+	git remote add origin $(ORIGIN) && \
+	git push -u --force origin master
+
