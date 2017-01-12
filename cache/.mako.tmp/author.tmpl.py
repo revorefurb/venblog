@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1484191901.4739318
+_modified_time = 1484204297.0915942
 _enable_loop = True
 _template_filename = '/home/spi/.virtualenvs/venblog/lib/python3.6/site-packages/nikola/data/themes/base/templates/author.tmpl'
 _template_uri = 'author.tmpl'
@@ -28,23 +28,23 @@ def render_body(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
-        posts = context.get('posts', UNDEFINED)
-        title = context.get('title', UNDEFINED)
-        def content():
-            return render_content(context._locals(__M_locals))
-        sorted = context.get('sorted', UNDEFINED)
         _link = context.get('_link', UNDEFINED)
-        messages = context.get('messages', UNDEFINED)
-        parent = context.get('parent', UNDEFINED)
+        translations = context.get('translations', UNDEFINED)
         def extra_head():
             return render_extra_head(context._locals(__M_locals))
-        generate_rss = context.get('generate_rss', UNDEFINED)
-        kind = context.get('kind', UNDEFINED)
-        date_format = context.get('date_format', UNDEFINED)
-        translations = context.get('translations', UNDEFINED)
-        len = context.get('len', UNDEFINED)
         author = context.get('author', UNDEFINED)
+        kind = context.get('kind', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
+        date_format = context.get('date_format', UNDEFINED)
         description = context.get('description', UNDEFINED)
+        sorted = context.get('sorted', UNDEFINED)
+        def content():
+            return render_content(context._locals(__M_locals))
+        posts = context.get('posts', UNDEFINED)
+        title = context.get('title', UNDEFINED)
+        generate_rss = context.get('generate_rss', UNDEFINED)
+        len = context.get('len', UNDEFINED)
+        parent = context.get('parent', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n\n')
         if 'parent' not in context._data or not hasattr(context._data['parent'], 'extra_head'):
@@ -65,16 +65,16 @@ def render_body(context,**pageargs):
 def render_extra_head(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        sorted = context.get('sorted', UNDEFINED)
         _link = context.get('_link', UNDEFINED)
-        parent = context.get('parent', UNDEFINED)
+        translations = context.get('translations', UNDEFINED)
         def extra_head():
             return render_extra_head(context)
-        generate_rss = context.get('generate_rss', UNDEFINED)
-        kind = context.get('kind', UNDEFINED)
-        translations = context.get('translations', UNDEFINED)
-        len = context.get('len', UNDEFINED)
         author = context.get('author', UNDEFINED)
+        kind = context.get('kind', UNDEFINED)
+        sorted = context.get('sorted', UNDEFINED)
+        generate_rss = context.get('generate_rss', UNDEFINED)
+        len = context.get('len', UNDEFINED)
+        parent = context.get('parent', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n    ')
         __M_writer(str(parent.extra_head()))
@@ -106,20 +106,20 @@ def render_extra_head(context,**pageargs):
 def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        posts = context.get('posts', UNDEFINED)
+        _link = context.get('_link', UNDEFINED)
+        translations = context.get('translations', UNDEFINED)
         title = context.get('title', UNDEFINED)
+        author = context.get('author', UNDEFINED)
+        kind = context.get('kind', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
+        date_format = context.get('date_format', UNDEFINED)
+        description = context.get('description', UNDEFINED)
         def content():
             return render_content(context)
+        posts = context.get('posts', UNDEFINED)
         sorted = context.get('sorted', UNDEFINED)
-        _link = context.get('_link', UNDEFINED)
-        messages = context.get('messages', UNDEFINED)
         generate_rss = context.get('generate_rss', UNDEFINED)
-        kind = context.get('kind', UNDEFINED)
-        date_format = context.get('date_format', UNDEFINED)
-        translations = context.get('translations', UNDEFINED)
-        description = context.get('description', UNDEFINED)
         len = context.get('len', UNDEFINED)
-        author = context.get('author', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n<article class="authorpage">\n    <header>\n        <h1>')
         __M_writer(filters.html_escape(str(title)))
