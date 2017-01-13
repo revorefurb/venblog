@@ -1,4 +1,0 @@
-Sitemap: http://twohourslate.com/sitemapindex.xml
-
-User-Agent: *
-Host: twohourslate.com
