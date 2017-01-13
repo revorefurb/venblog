@@ -1,0 +1,10 @@
+.. title: Emacs trial
+.. slug: emacs-trial
+.. date: 2017-01-13 01:47:16 MST
+.. tags: emacs
+.. category: trials
+.. link: 
+.. description: 
+.. type: text
+
+This is a trial for an emacs feature for posting.
