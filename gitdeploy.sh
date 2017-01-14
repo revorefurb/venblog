@@ -12,7 +12,7 @@ git push origin src
 
 cd $PUBDIR
 git add .
-git commit -m "publish update"
+git commit -am "publish update"
 git push srv master
 
 cd $VENDIR
