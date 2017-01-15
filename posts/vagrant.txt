@@ -1,0 +1,11 @@
+.. author: revo
+.. title: vagrant
+.. slug: vagrant
+.. date: 2017-01-14 16:55:21 MST
+.. tags: linux
+.. category: virtual
+.. link: 
+.. description: installing a vagrant vm
+.. type: text
+
+Need vagrant and virtualbox-qt. BIOS needs to allow virtualization. Then create folder and vagrant init with link to box file followed by a vagrant up and vagrant ssh. When done vagrant halt.
