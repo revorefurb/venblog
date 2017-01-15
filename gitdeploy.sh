@@ -7,6 +7,7 @@ PUBDIR=/srv/http/
 cd $VENDIR
 chmod 666 ./posts/*
 
+workon venblog
 nikola build
 
 git add .
@@ -19,4 +20,6 @@ git commit -am "publish update"
 git push srv master
 
 cd $VENDIR
+
+deactivate
 
