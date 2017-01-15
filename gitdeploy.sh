@@ -4,7 +4,8 @@
 VENDIR=/home/spi/aimer-dorenavant/venblog/revo/
 PUBDIR=/srv/http/
 
-chmod 666 $VENDIR/posts/*
+cd $VENDIR
+chmod 666 ./posts/*
 
 git add .
 git commit -m "nikola has rebuilt"
