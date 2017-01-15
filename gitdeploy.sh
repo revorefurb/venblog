@@ -7,6 +7,8 @@ PUBDIR=/srv/http/
 cd $VENDIR
 chmod 666 ./posts/*
 
+nikola build
+
 git add .
 git commit -m "nikola has rebuilt"
 git push origin src
