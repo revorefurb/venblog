@@ -10,5 +10,6 @@
 
 Camels are able to eat just about anything. Have you 
 ever tried eating a Christmas tree? That's dessert to 
-a camel. You are what you eat. 'A Christmas Camel 
-<https://www.youtube.com/watch?v=RQwR1Ph36Jo>'_.
+a camel. You are what you eat. A Christmas Camel 
+
+.. youtube:: RQwR1Ph35Jo

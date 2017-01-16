@@ -84,21 +84,23 @@ NAVIGATION_LINKS = {
         ('/archive.html', 'Archive'),
         ('/categories/', 'Tags'),
 	('/authors/', 'Authors'),
+	('https://twitter.com/revorefurb', '<i class="fa fa-twitter fa-lg"></i>'),
+	('https://github.com/revorefurb', '<i class="fa fa-github fa-lg"></i>'),
+	('/rss.xml', '<i class="fa fa-rss fa-lg"></i>'),
     ),
 }
 
 NAVIGATION_LINKS_ALT = {
    DEFAULT_LANG: (
-	('https://twitter.com/revorefurb', 
-'<i class="fa fa-twitter fa-lg"></i>'),
-	('https://github.com/revorefurb', '<i class="fa fa-github fa-lg"></i>'),
-	('/rss.xml', '<i class="fa fa-rss fa-lg"></i>'),
+#	('https://twitter.com/revorefurb', '<i class="fa fa-twitter fa-lg"></i>'),
+#	('https://github.com/revorefurb', '<i class="fa fa-github fa-lg"></i>'),
+#	('/rss.xml', '<i class="fa fa-rss fa-lg"></i>'),
    )
 }
 
 
 # Name of the theme to use.
-THEME = "bootstrap3"
+THEME = "custom_theme"
 
 # Primary color of your theme. This will be used to customize your theme and
 # auto-generate related colors in POSTS_SECTION_COLORS. Must be a HEX value.
@@ -806,9 +808,25 @@ IMAGE_FOLDERS = {'images': 'images'}
 #     ("icon", "/favicon.ico", "16x16"),
 #     ("icon", "/icon_128x128.png", "128x128"),
 # )
+FAVICONS = (
+      ("icon", "/favicon.ico", "16x16"),
+      ("icon", "/assets/img/favicon-32x32.png", "32x32"),
+      ("icon", "/assets/img/favicon-96x96.png", "96x96"),
+      ("icon", "/assets/img/favicon-16x16.png", "16x16"),
+      ("icon", "/assets/img/apple-icon-57x57.png", "57x57"),
+      ("icon", "/assets/img/apple-icon-60x60.png", "60x60"),
+      ("icon", "/assets/img/apple-icon-72x72.png", "72x72"),
+      ("icon", "/assets/img/apple-icon-76x76.png", "76x76"),
+      ("icon", "/assets/img/apple-icon-114x114.png", "114x114"),
+      ("icon", "/assets/img/apple-icon-120x120.png", "120x120"),
+      ("icon", "/assets/img/apple-icon-144x144.png", "144x144"),
+      ("icon", "/assets/img/apple-icon-152x152.png", "152x152"),
+      ("icon", "/assets/img/apple-icon-180x180.png", "180x180"),
+      ("icon", "/assets/img/android-icon-192x192.png", "192x192"),
+)
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.
-# INDEX_TEASERS = False
+# INDEX_TEASERS = FALSE
 
 # HTML fragments with the Read more... links.
 # The following tags exist and are replaced for you:
@@ -1016,7 +1034,7 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # long time). Insert anything you want here, or even make it empty (which is
 # the default right now)
 # (translatable)
-# SOCIAL_BUTTONS_CODE = """
+SOCIAL_BUTTONS_CODE = """<div class="share"></div>"""
 # <!-- Social buttons -->
 # <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
 # <a class="addthis_button_more">Share</a>
@@ -1034,7 +1052,8 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # Formerly known as HIDE_SOURCELINK (inverse)
 # SHOW_SOURCELINK = True
 # Copy the source files for your pages?
-# Setting it to False implies SHOW_SOURCELINK = False
+# Setting it to False implies SHOW_SOURCELINK 
+
 # COPY_SOURCES = True
 
 # Modify the number of Post per Index Page
@@ -1136,7 +1155,14 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
-# BODY_END = ""
+BODY_END = """
+<script src="/javascripts/jquery.socialshareprivacy.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('.share').socialSharePrivacy();
+});
+</script>
+"""
 
 # The possibility to extract metadata from the filename by using a
 # regular expression.

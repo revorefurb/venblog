@@ -5,6 +5,6 @@
 .. category: trials
 .. link: 
 .. description: 
-.. type: text
+.. type: micro
 
 This is a trial for an emacs feature for posting.
