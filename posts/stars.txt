@@ -1,4 +1,4 @@
-.. author: bimi
+.. author: revo
 .. title: Animals and Stars
 .. slug: animals-and-stars
 .. date: 2017-01-14 18:35:53 MST

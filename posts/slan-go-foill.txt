@@ -1,5 +1,6 @@
 .. title: Slan go foill
 .. slug: slan-go-foill
+.. author: revo
 .. date: 2017-01-05 05:49:08 UTC
 .. tags: thoughts
 .. category: 

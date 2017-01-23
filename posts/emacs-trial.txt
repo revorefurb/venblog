@@ -1,5 +1,6 @@
 .. title: Emacs trial
 .. slug: emacs-trial
+.. author: revo
 .. date: 2017-01-13 01:47:16 MST
 .. tags: emacs
 .. category: trials
