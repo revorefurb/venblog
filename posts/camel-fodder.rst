@@ -1,5 +1,5 @@
 .. title: Camel Fodder
-.. author: revorefurb
+.. author: revo
 .. slug: camel-fodder
 .. date: 2017-01-11 23:42:01 UTC-07:00
 .. tags: camels 

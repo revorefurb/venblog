@@ -1,5 +1,6 @@
 .. title: Something Gives
 .. slug: something-gives
+.. author: revo
 .. date: 2017-01-14 02:30:21 UTC
 .. tags: work
 .. category: thoughts
