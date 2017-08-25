@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1503624724.7772179
+_modified_time = 1503625414.9707355
 _enable_loop = True
 _template_filename = '/home/spi/.virtualenvs/venblog/lib/python3.6/site-packages/nikola/data/themes/bootstrap3/templates/authors.tmpl'
 _template_uri = 'authors.tmpl'
@@ -29,10 +29,10 @@ def render_body(context,**pageargs):
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
         hidden_authors = context.get('hidden_authors', UNDEFINED)
+        items = context.get('items', UNDEFINED)
         messages = context.get('messages', UNDEFINED)
         def content():
             return render_content(context._locals(__M_locals))
-        items = context.get('items', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n\n')
         if 'parent' not in context._data or not hasattr(context._data['parent'], 'content'):
@@ -49,10 +49,10 @@ def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         hidden_authors = context.get('hidden_authors', UNDEFINED)
+        items = context.get('items', UNDEFINED)
         messages = context.get('messages', UNDEFINED)
         def content():
             return render_content(context)
-        items = context.get('items', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         if items:
