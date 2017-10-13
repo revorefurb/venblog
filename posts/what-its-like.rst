@@ -11,7 +11,8 @@
 
 It was 2017 when the world recognized that careers behind keyboards were not self fulfilling but were the ultimate dystopian dream. Unless you were a writer or a Scientist or a Science Writer.
 
-.. image:: images/successful_people.jpgu
+.. image:: images/successful_people.png
+           
 
 For everyone else, it became the matrix. No one wanted to be there, but no one could leave. Their bodies were weakened by years of idleness and comfort. Income, insurance and retirement became more critical to sustaining life than did faith, hope and love. In fact, those were just basically make believe relics from a simpler time. There was nothing to have faith in. Sure, there was hope but it wasn't hope for a better tomorrow as much as hope that today would be uneventful. And love... the love that defined humanity was disappearing like the glaciers that had protected the earth from man for 40,000 years_.
 
@@ -27,6 +28,15 @@ That's a long question and time is so short. A smart man says that learning is l
 
 .. youtube:: jc_oLZuFwaI
 
-:You Should Know: Written in Emacs. [1]_
 
-..[1] That makes it cool.
+
+
+             :You Should Know: Written in Emacs. [1]
+
+
+
+
+
+                  
+
+[1] That makes it cool.
