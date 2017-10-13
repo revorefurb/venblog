@@ -11,9 +11,12 @@
 
 It was 2017 when the world recognized that careers behind keyboards were not self fulfilling but were the ultimate dystopian dream. Unless you were a writer or a Scientist or a Science Writer.
 
-.. thumbnail:: /images/successful_people.png
-           
+..
 
+.. thumbnail:: /images/successful_people.png
+ 
+.. 
+ 
 For everyone else, it became the matrix. No one wanted to be there, but no one could leave. Their bodies were weakened by years of idleness and comfort. Income, insurance and retirement became more critical to sustaining life than did faith, hope and love. In fact, those were just basically make believe relics from a simpler time. There was nothing to have faith in. Sure, there was hope but it wasn't hope for a better tomorrow as much as hope that today would be uneventful. And love... the love that defined humanity was disappearing like the glaciers that had protected the earth from man for 40,000 years_.
 
 .. _years: https://en.wikipedia.org/wiki/Last_Glacial_Maximum
@@ -22,14 +25,15 @@ Love became only for the seekers as most stopped looking long before they could 
 
 So, what exactly does one feel, while living in the year of our lord 2017? One feels very confused. Everything is arbitrary whose reference is static. So static in fact that we no longer are counting forward looking backward, now we're couting backward looking forward. Instead of 2018, it was 2,018 years BP that that thing happend that everyone thought was so important. Isn't it strange that those who think it was important and those who just call it another BP (before present) year will have the same truth and a totally different reference? So, let me pose the question to end all questions. It's also the question that births all questions... it's the virgin birth question... just thought you should know...
 
-**Does truth even exist?**
+**Does truth exist?**
 
 That's a long question and time is so short. A smart man says that learning is living and time is always on his side. That would be the outside, by the way.
 
 .. youtube:: jc_oLZuFwaI
 
+..
 
-:You Should Know: Written in Emacs_ on archlinux|ARM_
+:Know where to go: Written in Emacs_ on archlinux|ARM_
 
-.. _archlinux|ARM: https://archlinuxarm.org/platforms/armv6/raspberry-pi
+.. _ARM: https://archlinuxarm.org/platforms/armv6/raspberry-pi
 .. _Emacs: https://www.gnu.org/software/emacs/
