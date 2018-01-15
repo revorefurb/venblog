@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1516041200.4025133
+_modified_time = 1516041830.470839
 _enable_loop = True
 _template_filename = '/home/spi/.virtualenvs/venblog/lib/python3.6/site-packages/nikola/data/themes/bootstrap3/templates/authors.tmpl'
 _template_uri = 'authors.tmpl'
@@ -28,10 +28,10 @@ def render_body(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
-        def content():
-            return render_content(context._locals(__M_locals))
         hidden_authors = context.get('hidden_authors', UNDEFINED)
         items = context.get('items', UNDEFINED)
+        def content():
+            return render_content(context._locals(__M_locals))
         messages = context.get('messages', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n\n')
@@ -48,10 +48,10 @@ def render_body(context,**pageargs):
 def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        def content():
-            return render_content(context)
         hidden_authors = context.get('hidden_authors', UNDEFINED)
         items = context.get('items', UNDEFINED)
+        def content():
+            return render_content(context)
         messages = context.get('messages', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
