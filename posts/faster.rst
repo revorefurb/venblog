@@ -5,10 +5,10 @@
 .. tags: speed
 .. category: skills
 .. link: 
-.. description: balance is key if you are going to maintain the sanity of slow and the success of speed
+.. description: balance is to maintain sanity and success
 .. type: text
 
-How could it ever be faster to take notes by printing, it is far faster to write with script. This is one of the handicaps of today's youth because they are not able to keep up with the pace of taking notes in class. I used to write like a bandit in class to try to keep up with the professor so that I could pass the test. Apparently, I was just studying to be a writer.
+How could it ever be faster to take notes by printing? It is far faster to write with type. This is one of the handicaps of today's youth because they are not able to keep up with the pace of taking notes in class. I used to write like a bandit in class to try to keep up with the professor so that I could pass the test. Apparently, I was just studying to be a writer.
 ..
 What is the fastest stream of consciousness that you have in your toolbox?
 ..
@@ -17,21 +17,16 @@ Which might be faster that you should learn?
 Which are slower that you should do more often?
 ..
 *Google*: 1m01s
-..
 .. thumbnail:: /images/speech.png
 ..
 **Typing**: 1m55s
-..   
-**Printing**:3m49s
 ..
+**Printing**:3m49s
 .. thumbnail:: /images/print.jpg
 ..
 **Script**: 4m34s
-..
 .. thumbnail:: /images/script.jpg
 ..
-..
 :Know where to go: Written in Emacs_ on achlinux|ARM_
-.. _ARM: https://archlinuxarm.org/platforms/armv6/raspberry-pi
+.. _ARM: https://archlinuxarm.org/platforms/armv6/raspberry-pi/
 .. _Emacs: https://www.gnu.org/software/emacs/
-..
