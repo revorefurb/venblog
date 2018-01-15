@@ -31,12 +31,7 @@ Which are slower that you should do more often?
 .. thumbnail:: /images/script.jpg
 ..
 ..
-:Know where to go: Written in Emacs_ on ar\
-chlinux|ARM_                               
-                                           
-.. _ARM: https://archlinuxarm.org/platform\
-s/armv6/raspberry-pi                       
-.. _Emacs: https://www.gnu.org/software/em\
-acs/                                       
-     
-
+:Know where to go: Written in Emacs_ on achlinux|ARM_
+.. _ARM: https://archlinuxarm.org/platforms/armv6/raspberry-pi
+.. _Emacs: https://www.gnu.org/software/emacs/
+..
