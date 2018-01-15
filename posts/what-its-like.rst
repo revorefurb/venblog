@@ -35,5 +35,5 @@ That's a long question and time is so short. A smart man says that learning is l
 
 :Know where to go: Written in Emacs_ on archlinux|ARM_
 
-.. _ARM: https://archlinuxarm.org/platforms/armv6/raspberry-pi
+.. _archlinux|ARM: https://archlinuxarm.org/platforms/armv6/raspberry-pi
 .. _Emacs: https://www.gnu.org/software/emacs/

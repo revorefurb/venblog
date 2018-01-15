@@ -1,0 +1,28 @@
+.. title: template
+.. author: revo
+.. slug: make life easier
+.. date: Mon 15-Jan-2018 11:27 am
+.. tags: template 
+.. category: tools
+.. link: 
+.. description: text template that works in emacs
+.. type: text
+
+It is helpful to have templates to make a full life easier to build and operate.
+..
+.. youtube:: fZmlMmdCTYA
+..
+..                                         
+:Know where to go: Written in Emacs_ on ar\
+\                                          
+chlinux|ARM_                              \
+                                           
+                                          \
+                                           
+.. _ARM: https://archlinuxarm.org/platform\
+\                                          
+s/armv6/raspberry-pi                      \
+                                           
+.. _Emacs: https://www.gnu.org/software/em\
+\                                          
+acs/        
